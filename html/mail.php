@@ -3,9 +3,18 @@
 $message = "";
 
 $subject = "Kein Betreff gesetzt";
+$recipient = 'norbert@familie-steiner.net';
 
 if (isset($_GET['subject'])) {
   $subject = $_GET['subject'];
+}
+
+if (isset($_GET['recipient'])) {
+  $recipient = $_GET['recipient'];
+}
+
+if (isset($_GET['message'])) {
+  $message = $_GET['message'];
 }
 
 // Falls eine Zeile der Nachricht mehr als 70 Zeichen enthaelten koennte,
@@ -13,5 +22,5 @@ if (isset($_GET['subject'])) {
 $message = wordwrap($message, 70);
 
 // Send
-mail('norbert@familie-steiner.net', $subject, $message);
+mail($recipient, $subject, $message);
 ?>
