@@ -34,4 +34,5 @@ else
     fi
 fi
 
-#./bu
+#./busybox sleep 90
+rm internetcheck.pid
