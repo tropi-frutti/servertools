@@ -44,4 +44,8 @@ then
     curl "http://familie-steiner.net/mail.php?subject=Unknown%20filesize%20${a[0]}"
   fi
 else
-  curl "http://familie-steiner.net/mail.ph
+  curl "http://familie-steiner.net/mail.php?subject=Telefonstatus%20nicht%20ermittelbar"
+fi
+
+#./busybox sleep 90
+rm telefoncheck.pid
