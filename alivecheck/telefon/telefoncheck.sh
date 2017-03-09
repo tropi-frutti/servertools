@@ -1,9 +1,10 @@
 #!/bin/bash
+cd servertools/alivecheck/telefon
 if [ -f telefoncheck.pid ]
 then
   echo "telefoncheck.pid already there"
   # check if it is older than 60 minutes
-  if [ "$(./busybox find telefonckeck.pid -mmin +60)" ] 
+  if [ "$(~/busybox find telefonckeck.pid -mmin +60)" ] 
   then
     echo "pid older than 60 minutes assuming process no longer running"
   else

@@ -4,7 +4,7 @@ if [ -f internetcheck.pid ]
 then
   echo "internetcheck.pid already there"
   # check if it is older than 60 minutes
-  if [ "$(./busybox find internetcheck.pid -mmin +60)" ] 
+if [ "$(~/busybox find internetcheck.pid -mmin +60)" ] 
   then
     echo "pid older than 60 minutes assuming process no longer running"
   else
