@@ -1,4 +1,5 @@
 #!/bin/bash
+cd servertools/alivecheck/internet
 if [ -f internetcheck.pid ]
 then
   echo "internetcheck.pid already there"
