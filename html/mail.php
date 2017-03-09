@@ -1,7 +1,5 @@
 <?php
-// Die Nachricht
 $message = "";
-
 $subject = "Kein Betreff gesetzt";
 $recipient = 'norbert@familie-steiner.net';
 
